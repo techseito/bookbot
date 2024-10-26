@@ -7,9 +7,15 @@ def main():
     cwords = count_words(text)
     print(f"Word count: {cwords}")
     cchars = count_characters(text)
-    print(f"Character count: {cchars}")
+    #cchars.sort(reverse=True,key=sort_on)
+    print(cchars)
+    for i in cchars:
+       #print(i)
+       print(f"The {i} character was found {cchars[i]} times")
+    #print(f"Character count: {cchars}")
     
-
+#def sort_on(dict)
+#   return dict[]
 
 def get_book_text(path):
     with open(path) as f:
